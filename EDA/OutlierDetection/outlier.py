@@ -78,3 +78,17 @@ for i in range(5):
     
     if (~good).sum() == 0:
         break
+
+# =============================================================================
+# Sklearn
+# =============================================================================
+# an alternative to manual outlier detection, is the uber powerful Sklearn package
+from sklearn.neighbors import LocalOutlierFactor
+
+df = np.loadtext("outlier_2d")
+
+lof = LocalOutlierFactor(n_neighbors=20, contamination=0.005)
+good = lof.fit_predict(df) == 1
+plt.scatter(df[good, 0], df[good, 1], s=2, label="Good", color="#4CAF50")
+plt.scatter(df[~good, 0], df[~good, 1], s=8, label="Bad", color="#F44336")
+plt.legend();

@@ -13,7 +13,3 @@ Numbers matter! all plots should be accompanied by quantification in a presentat
 
 # Hypothesis Testing:
 If two hypotheses are formulated, how confidantly can we point out the one that is true!
-
-
-
-###### This is a personal repository for quick access to code snippets. Obtained snippets, data and examples and files can be found at Statistical Analysis with Python by Samuel Hinton.
